@@ -3,6 +3,10 @@
 Final data products live in `data/processed/`. Raw inputs (`data/raw/`) are
 kept for provenance and are reproducible via `src/filter_nass.py`.
 
+> The synthetic-data **benchmark** layer (`data/benchmark/`) has its own
+> dictionary with a deterministic / stochastic / target-predictor column-role
+> taxonomy: see [`benchmark-schema.md`](benchmark-schema.md).
+
 ## 1. `corn_grip_panel_1975_2009.csv` / `.parquet` — Dataset 1 (replication)
 
 One row per county-year. 21,035 rows = 601 counties × 35 years (1975–2009),

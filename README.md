@@ -26,14 +26,36 @@ src/
   build_datasets.py             builds Dataset 1 + Dataset 2 + aux tables
   copulas.py                    six bivariate copulas (fit / logpdf / sample)
   replicate_paper.py            full replication (Tables 1-8 analogs)
+  enrich_spatial.py             county centroids + adjacency (benchmark layer)
+  reshape_benchmark.py          synthetic-data benchmark tracks (separate output)
 data/
   raw/                          NASS extract, price-table provenance
   processed/                    the two panel datasets + aux tables
+  benchmark/                    tabular synthetic-data benchmark tracks
 results/                        replication outputs (see below)
 docs/
   replication-specs.md          reverse-engineered paper spec + data diffs
   data-dictionary.md            column-by-column data dictionary
   results-comparison.md         our results vs the paper's tables
+  benchmark-schema.md           synthetic-data benchmark schema + column roles
+```
+
+## Synthetic-data benchmarking layer
+
+A separate, additive layer reshapes the panel for benchmarking copula-, DL-,
+and MICE-based tabular generators on actuarial metrics (tail extrapolation,
+heterogeneous tail dependence, spatial dependence, downstream rating utility).
+It writes only to `data/benchmark/` and does not touch the replication data or
+`results/`. Two tracks — **year-as-row** portfolio format (spatial units as
+columns, on a state→ASD→county resolution ladder) and a high-n
+**county-year-as-row** conditional format — plus centroid/adjacency spatial
+files. Full column-role taxonomy (deterministic vs. stochastic vs.
+target/predictor) and the metric-to-track map are in
+[`docs/benchmark-schema.md`](docs/benchmark-schema.md).
+
+```bash
+python src/enrich_spatial.py       # needs Census reference files in data/raw/spatial/
+python src/reshape_benchmark.py
 ```
 
 ## The two datasets

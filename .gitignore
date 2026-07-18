@@ -11,6 +11,9 @@ data/raw/qs.crops_*.txt.gz
 data/raw/FeedGrains.zip
 data/raw/feed-grains-yearbook-all-years.csv
 
+# Census spatial reference downloads (reproducible via src/enrich_spatial.py)
+data/raw/spatial/
+
 # Third-party provenance copies (farmdoc); data is embedded with citations
 # in src/build_prices.py
 data/raw/fdd010516_tab1.jpg

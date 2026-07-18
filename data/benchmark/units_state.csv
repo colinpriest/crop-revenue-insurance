@@ -1,0 +1,9 @@
+unit_id,column,resolution,n_counties,lat,lon,spatial_order,state_fips,state_alpha
+18,y_resid_18,state,92,39.87226,-86.21776,151.19106,18,IN
+17,y_resid_17,state,102,39.85379,-89.18767,164.61627,17,IL
+39,y_resid_39,state,88,40.30249,-82.88391,186.90724,39,OH
+31,y_resid_31,state,93,41.29322,-98.93217,303.30831,31,NE
+19,y_resid_19,state,99,42.03913,-93.45743,389.89626,19,IA
+26,y_resid_26,state,81,43.64356,-84.89789,522.29152,26,MI
+55,y_resid_55,state,71,44.25871,-89.78877,569.88260,55,WI
+27,y_resid_27,state,85,45.32976,-94.54248,623.63415,27,MN
