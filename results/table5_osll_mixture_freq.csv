@@ -1,0 +1,16 @@
+,freq_best
+Kernel-Gaussian,0.0832
+Kernel-t,0.0982
+Kernel-Frank,0.0333
+Kernel-Gumbel,0.1797
+Kernel-Clayton,0.0349
+Gaussian-t,0.0333
+Gaussian-Frank,0.0116
+Gaussian-Gumbel,0.0849
+Gaussian-Clayton,0.0233
+t-Frank,0.015
+t-Gumbel,0.0782
+t-Clayton,0.0349
+Frank-Gumbel,0.1131
+Frank-Clayton,0.0316
+Gumbel-Clayton,0.1448

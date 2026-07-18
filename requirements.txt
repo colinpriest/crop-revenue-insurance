@@ -1,0 +1,11 @@
+# Core numerics / data
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+
+# Parquet output for the panel datasets (optional but recommended)
+pyarrow>=14
+
+# PDF text extraction (only needed to re-read the paper)
+pypdf>=4
+pdfplumber>=0.11

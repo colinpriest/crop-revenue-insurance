@@ -1,0 +1,16 @@
+,avg_weight_first_component
+Kernel-Gaussian,0.0053
+Kernel-t,0.0133
+Kernel-Frank,0.0067
+Kernel-Gumbel,0.0516
+Kernel-Clayton,0.005
+Gaussian-t,0.5308
+Gaussian-Frank,0.2962
+Gaussian-Gumbel,0.8802
+Gaussian-Clayton,0.1771
+t-Frank,0.2806
+t-Gumbel,0.8669
+t-Clayton,0.1628
+Frank-Gumbel,0.9068
+Frank-Clayton,0.275
+Gumbel-Clayton,0.0715

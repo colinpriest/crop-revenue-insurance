@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Large raw downloads (reproducible via src/filter_nass.py; ~1.1 GB)
+data/raw/qs.crops_*.txt.gz
+data/raw/FeedGrains.zip
+data/raw/feed-grains-yearbook-all-years.csv
+
+# Third-party provenance copies (farmdoc); data is embedded with citations
+# in src/build_prices.py
+data/raw/fdd010516_tab1.jpg
+data/raw/fdd111224.pdf
+
+# Secret provenance — presigned S3 URLs containing an AWS temporary key/token.
+# Never commit. See specs/data-specs.md for the scrubbed public version.
+*.local.txt
+specs/data-specs-source-urls.local.txt
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
